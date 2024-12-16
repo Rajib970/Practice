@@ -1,0 +1,28 @@
+[10-Jul-2024 12:17:32 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php on line 8
+[12-Jul-2024 10:48:25 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php on line 8
+[27-Aug-2024 23:56:01 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php on line 8
+[28-Sep-2024 23:46:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php on line 8
+[08-Oct-2024 00:32:43 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php on line 8
+[22-Oct-2024 02:16:56 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php on line 8
+[01-Nov-2024 23:41:25 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "ABSPATH" in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php:8
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-includes/blocks/index.php on line 8

@@ -1,0 +1,4 @@
+[12-Jul-2024 10:56:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-content/plugins/hello.php on line 69

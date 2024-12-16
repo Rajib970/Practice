@@ -1,0 +1,8 @@
+[01-Nov-2024 23:44:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-admin/includes/admin.php on line 16
+[15-Nov-2024 16:23:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home4/a1617qsw/public_html/demo.qurolabs.com/wp-admin/includes/admin.php on line 16

@@ -21,16 +21,16 @@ define( 'WP_CACHE', true );
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'a1617qsw_demo' );
+define( 'DB_NAME', 'wp-practice' );
 
 /** Database username */
-define( 'DB_USER', 'a1617qsw_wp49' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'D.5[8m1pSS' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'localhost:3307' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );

@@ -33,7 +33,7 @@
         <ul>
           <li class="dropdown"><a href="#"><span>Intralogistics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="/avg">AVG</a></li>
+              <li><a href="./avg">AVG</a></li>
               <li><a href="/amr">AMR</a></li>
               <li><a href="/conveyors">Conveyors</a></li>
               <li><a href="/cobots">Cobots</a></li>

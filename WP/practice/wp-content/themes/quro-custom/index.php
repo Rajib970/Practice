@@ -8,7 +8,6 @@
 
   <!-- Hero Section -->
   <section id="hero" class="hero section video-container dark-background">
-
    <video autoplay muted loop id="bg-video">
     <source src="<?php echo get_bloginfo('template_url').'/assets/video/bg-video.mp4'; ?>" type="video/mp4">
     </video>

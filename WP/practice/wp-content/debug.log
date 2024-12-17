@@ -1933,3 +1933,43 @@ Stack trace:
 [16-Dec-2024 08:57:49 UTC]   Automatic theme updates starting...
 [16-Dec-2024 08:57:49 UTC]   Automatic theme updates complete.
 [16-Dec-2024 08:57:49 UTC] Automatic updates complete.
+[17-Dec-2024 10:02:01 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wpdb.php on line 1982
+[17-Dec-2024 10:02:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wpdb.php on line 1982
+[17-Dec-2024 10:02:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wpdb.php on line 1982
+[17-Dec-2024 10:02:58 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wpdb.php on line 1982
+[17-Dec-2024 10:02:59 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wpdb.php on line 1982
+[17-Dec-2024 10:02:59 UTC] PHP Warning:  mysqli_real_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wpdb.php on line 1982
+[17-Dec-2024 10:20:15 UTC] Automatic updates starting...
+[17-Dec-2024 10:20:16 UTC]   Automatic plugin updates starting...
+[17-Dec-2024 10:20:16 UTC]   Automatic plugin updates complete.
+[17-Dec-2024 10:20:17 UTC]   Automatic theme updates starting...
+[17-Dec-2024 10:20:17 UTC]   Automatic theme updates complete.
+[17-Dec-2024 10:20:17 UTC] Automatic updates complete.
+[17-Dec-2024 10:58:57 UTC] PHP Parse error:  Unclosed '{' on line 50 in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\functions.php on line 64
+[17-Dec-2024 10:58:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[17-Dec-2024 10:58:57 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[17-Dec-2024 11:12:52 UTC] PHP Parse error:  syntax error, unexpected token ":", expecting ";" in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php on line 19
+[17-Dec-2024 11:13:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function i_active_sidebar() in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php:15
+Stack trace:
+#0 C:\xampp\htdocs\Codes\WP\practice\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\Codes\WP\practice\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codes\WP\practice\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php on line 15
+[17-Dec-2024 11:14:17 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting "elseif" or "else" or "endif" in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php on line 19
+[17-Dec-2024 11:22:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_calender() in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php:14
+Stack trace:
+#0 C:\xampp\htdocs\Codes\WP\practice\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\Codes\WP\practice\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codes\WP\practice\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php on line 14
+[17-Dec-2024 11:28:52 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_get_links_list() in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php:14
+Stack trace:
+#0 C:\xampp\htdocs\Codes\WP\practice\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\Codes\WP\practice\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codes\WP\practice\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php on line 14
+[17-Dec-2024 11:29:07 UTC] PHP Deprecated:  Function get_links_list is <strong>deprecated</strong> since version 2.1.0! Use wp_list_bookmarks() instead. in C:\xampp\htdocs\Codes\WP\practice\wp-includes\functions.php on line 6114
+[17-Dec-2024 11:29:07 UTC] PHP Deprecated:  Function get_categories was called with an argument that is <strong>deprecated</strong> since version 3.0.0! <code>type =&gt; link</code> is deprecated. Use <code>taxonomy =&gt; link_category</code> instead. in C:\xampp\htdocs\Codes\WP\practice\wp-includes\functions.php on line 6114

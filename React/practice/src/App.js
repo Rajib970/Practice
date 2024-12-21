@@ -25,10 +25,20 @@ function App() {
          setMode('dark')
          document.body.style.backgroundColor = "grey";
          showAlert("Dark Mode Has Been Enabled", "success");
+         document.title = 'TextUtils- Dark Mode';
+         setInterval(() =>{
+            document.title = 'TextUtils is amazing';
+         },1500);
+
+         setInterval(()=>{
+            document.titlee = 'Install TextUtils Now';
+         },3000);
       } else {
          setMode('light')
          document.body.style.backgroundColor = "white";
          showAlert("Light Mode Has Been Enabled", "success");
+         document.title = 'TectUtils - Light Mode';
+
       }
    }
    return (

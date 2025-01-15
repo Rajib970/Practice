@@ -16,14 +16,17 @@ void linkedListTraversal(struct Node *ptr)
     }
 }
 
+// Case 1
 struct Node *insertAtFirst(struct Node *head, int data)
 {
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
-    ptr->next = head;
     ptr->data = data;
+
+    ptr->next = head;
     return ptr;
 }
 
+// Case 2
 struct Node *insertAtIndex(struct Node *head, int data, int index)
 {
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
@@ -35,13 +38,13 @@ struct Node *insertAtIndex(struct Node *head, int data, int index)
         p = p->next;
         i++;
     }
-
     ptr->data = data;
     ptr->next = p->next;
     p->next = ptr;
     return head;
 }
 
+// Case 3
 struct Node *insertAtEnd(struct Node *head, int data)
 {
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
@@ -54,14 +57,15 @@ struct Node *insertAtEnd(struct Node *head, int data)
     }
     p->next = ptr;
     ptr->next = NULL;
-
     return head;
 }
 
+// Case 4
 struct Node *insertAfterNode(struct Node *head, struct Node *prevNode, int data)
 {
     struct Node *ptr = (struct Node *)malloc(sizeof(struct Node));
     ptr->data = data;
+
     ptr->next = prevNode->next;
     prevNode->next = ptr;
 

@@ -58,7 +58,7 @@ function App() {
             {/* <Navbar/> */}
             <div className='container'>
                <Routes>
-                  <Route exact path="/about" element={<About />}>
+                  <Route exact path="/about" element={<About mode={mode} />}>
                   </Route>
                   <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />}>
 

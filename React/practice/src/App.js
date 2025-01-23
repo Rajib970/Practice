@@ -34,7 +34,7 @@ function App() {
          setMode('dark')
          document.body.style.backgroundColor = "grey";
          showAlert("Dark Mode Has Been Enabled", "success");
-         document.title = 'TextUtils- Dark Mode';
+         // document.title = 'TextUtils- Dark Mode';
          setInterval(() => {
             document.title = 'TextUtils is amazing';
          }, 1500);
@@ -46,7 +46,7 @@ function App() {
          setMode('light')
          document.body.style.backgroundColor = "white";
          showAlert("Light Mode Has Been Enabled", "success");
-         document.title = 'TectUtils - Light Mode';
+         // document.title = 'TectUtils - Light Mode';
 
       }
    }

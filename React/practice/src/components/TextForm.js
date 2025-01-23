@@ -44,20 +44,20 @@ export default function TextForm(props) {
                     <div className="mb-3">
                         <div>
                             <h1>{props.heading}</h1>
-                            <textarea className="form-control" id="text" style={{ backgroundColor: props.mode === 'dark' ? 'grey' : 'white', color: props.mode === 'dark' ? 'white' : 'black' }} value={text} onChange={handleOnChange} id="" rows="8"></textarea>
+                            <textarea className="form-control" id="text" style={{ backgroundColor: props.mode === 'dark' ? '#000000' : 'white', color: props.mode === 'dark' ? 'white' : 'black' }} value={text} onChange={handleOnChange} id="" rows="8"></textarea>
                         </div>
-                        <button className="btn btn-primary my-2" onClick={handleUpperCase}> Convert to Uppercase </button>
-                        <button className="btn btn-primary mx-1 my-2" onClick={handleLowerCase}> Convert to Lowercase </button>
-                        <button className="btn btn-primary mx-1 my-2" onClick={clearText}> Clear </button>
-                        <button className="btn btn-primary mx-2 my-2" onClick={copyText}> Copy Text </button>
-                        <button className="btn btn-primary mx-2 my-2" onClick={removeSpace}> Remove Extra Spaces</button>
-                        <input className="btn btn-danger mx-2 my-2" type="button" value="Red" onClick={colorRed} />
+                        <button disabled={text.length === 0} className="btn btn-primary my-2" onClick={handleUpperCase}> Convert to Uppercase </button>
+                        <button disabled={text.length === 0} className="btn btn-primary mx-1 my-2" onClick={handleLowerCase}> Convert to Lowercase </button>
+                        <button disabled={text.length === 0} className="btn btn-primary mx-1 my-2" onClick={clearText}> Clear </button>
+                        <button disabled={text.length === 0} className="btn btn-primary mx-2 my-2" onClick={copyText}> Copy Text </button>
+                        <button disabled={text.length === 0} className="btn btn-primary mx-2 my-2" onClick={removeSpace}> Remove Extra Spaces</button>
+                        <input disabled={text.length === 0} className="btn btn-danger mx-2 my-2" type="button" value="Red" onClick={colorRed} />
                     </div>
                 </div>
                 <div className="container my-3">
                     <h1>Your text summary</h1>
                     <p>{text.split(" ").filter((element) => { return element.legnth !== 0 }).length} words and {text.length} characters</p>
-                    <p>{0.008 * text.split(" ").length} minutes to read</p>
+                    <p>{0.008 * text.split(" ").filter((element) => { return element.length != 0 }).length} minutes to read</p>
                     <h2> Preview </h2>
                     <p>{text.length > 0 ? text : "Enter text  to preview"}</p>
                 </div>

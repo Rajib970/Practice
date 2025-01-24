@@ -25,8 +25,11 @@ export default function TextForm(props) {
         setText(event.target.value);
     }
 
-    const copyText = (event) => {
-    }
+    // const handleCopy = (event) => {
+    //     console.log(text)
+    //     // navigator.clipboard.writeText(text);
+    //     props.showAlert('Text Copied');
+    // }
 
     const removeSpace = (event) => {
 
@@ -49,8 +52,8 @@ export default function TextForm(props) {
                         <button disabled={text.length === 0} className="btn btn-primary my-2" onClick={handleUpperCase}> Convert to Uppercase </button>
                         <button disabled={text.length === 0} className="btn btn-primary mx-1 my-2" onClick={handleLowerCase}> Convert to Lowercase </button>
                         <button disabled={text.length === 0} className="btn btn-primary mx-1 my-2" onClick={clearText}> Clear </button>
-                        <button disabled={text.length === 0} className="btn btn-primary mx-2 my-2" onClick={copyText}> Copy Text </button>
                         <button disabled={text.length === 0} className="btn btn-primary mx-2 my-2" onClick={removeSpace}> Remove Extra Spaces</button>
+                        {/* <button disabled={text.length === 0} className="btn btn-primary mx-2 my-2" onClick={handleCopy}> Copy Text</button> */}
                         <input disabled={text.length === 0} className="btn btn-danger mx-2 my-2" type="button" value="Red" onClick={colorRed} />
                     </div>
                 </div>

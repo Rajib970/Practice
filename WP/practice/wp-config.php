@@ -86,7 +86,7 @@ define('WP_DEBUG_DISPLAY', true); // Change to true to display errors on the sit
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+define('FS_METHOD','direct'); // Bypass the FTP details to install plugin
 
 /* That's all, stop editing! Happy publishing. */
 

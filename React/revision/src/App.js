@@ -1,18 +1,17 @@
 import './App.css';
 
-let name = "<p>Rajib</p>";
+let name = "Rajib";
 function App() {
   return (
     <>
-      <h2> Hello {name}</h2>
+      <img src="" alt="" />
       <nav>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li> Home </li>
+        <li> About </li>
+        <li> Contact </li>
       </nav>
-      <div className="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, tenetur temporibus cum quis eius beatae eum aperiam voluptatibus cumque, numquam nesciunt voluptatem aspernatur exercitationem maxime similique? Quidem, molestiae! Maxime, dolores.</p>
-      </div>
+      <h1> Hello <p>{name}</p></h1>
+      <div className="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, adipisci voluptate iusto consequatur sint molestiae eaque possimus. Voluptate sunt recusandae soluta ab vero ex ad quasi? Delectus enim debitis est asperiores sapiente nostrum dolor.</div>
     </>
 
   );

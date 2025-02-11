@@ -1973,3 +1973,8 @@ Stack trace:
   thrown in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\index.php on line 14
 [17-Dec-2024 11:29:07 UTC] PHP Deprecated:  Function get_links_list is <strong>deprecated</strong> since version 2.1.0! Use wp_list_bookmarks() instead. in C:\xampp\htdocs\Codes\WP\practice\wp-includes\functions.php on line 6114
 [17-Dec-2024 11:29:07 UTC] PHP Deprecated:  Function get_categories was called with an argument that is <strong>deprecated</strong> since version 3.0.0! <code>type =&gt; link</code> is deprecated. Use <code>taxonomy =&gt; link_category</code> instead. in C:\xampp\htdocs\Codes\WP\practice\wp-includes\functions.php on line 6114
+[28-Jan-2025 08:26:07 UTC] Automatic updates starting...
+[28-Jan-2025 08:26:09 UTC]   Automatic theme updates starting...
+[28-Jan-2025 08:26:09 UTC]   Automatic theme updates complete.
+[28-Jan-2025 08:26:09 UTC] Automatic updates complete.
+[28-Jan-2025 08:26:18 UTC] PHP Deprecated:  Function wp_update_https_detection_errors is <strong>deprecated</strong> since version 6.4.0 with no alternative available. in C:\xampp\htdocs\Codes\WP\practice\wp-includes\functions.php on line 6114

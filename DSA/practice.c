@@ -72,6 +72,60 @@ struct Node *insertAfterNode(struct Node *head, struct Node *prevNode, int data)
     return head;
 }
 
+struct Node *deleteFirstNode(struct Node *head)
+{
+    struct Node *ptr = head;
+    head = head->next;
+    free(ptr);
+    return head;
+}
+
+struct Node *deleteWithIndex(struct Node *head, int index)
+{
+    int i = 1;
+    struct Node *p = head;
+    while (i < index - 1)
+    {
+        p = p->next;
+        i++;
+    }
+    struct Node *q = p->next;
+    p->next = q->next;
+    free(q);
+
+    return p;
+}
+
+struct Node *deletLastNode(struct Node *head)
+{
+    struct Node *q = head->next;
+    struct Node *p = head;
+
+    while (q->next != NULL)
+    {
+        p = q;
+        q = q->next;
+    }
+    p->next = NULL;
+    free(q);
+
+    return q;
+}
+
+struct Node *deleteWithValue(struct Node *head, int value)
+{
+    struct Node *p = head;
+    struct Node *q;
+    while (p->data != value)
+    {
+        q = p;
+        p = p->next;
+    }
+    free(p);
+
+    return q;
+}
+
 int main()
 {
     struct Node *head;

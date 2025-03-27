@@ -61,5 +61,16 @@ function custom_sidebar(){
 // action hook attach with method
     add_action("widgets_init","custom_sidebar");
 
+function theme_support(){
+	add_theme_support('post-thumbnails');
+	add_image_size("small-thumbnail",120,90,true); // add featured immage size
+	add_image_size("banner-image",700,300,true); 
+	add_theme_support("post-formats",array("aside","gallery","link"));
+}
+
+add_action("after_setup_theme","theme_support");
+
+$wpb_all_query = new WP_Query(array('post_type'=>'post','post_status'=>'publish'));
+
 
 ?>

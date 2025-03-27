@@ -1978,3 +1978,22 @@ Stack trace:
 [28-Jan-2025 08:26:09 UTC]   Automatic theme updates complete.
 [28-Jan-2025 08:26:09 UTC] Automatic updates complete.
 [28-Jan-2025 08:26:18 UTC] PHP Deprecated:  Function wp_update_https_detection_errors is <strong>deprecated</strong> since version 6.4.0 with no alternative available. in C:\xampp\htdocs\Codes\WP\practice\wp-includes\functions.php on line 6114
+[27-Mar-2025 10:07:45 UTC] Automatic updates starting...
+[27-Mar-2025 10:07:46 UTC]   Automatic plugin updates starting...
+[27-Mar-2025 10:07:46 UTC]   Automatic plugin updates complete.
+[27-Mar-2025 10:07:47 UTC]   Automatic theme updates starting...
+[27-Mar-2025 10:07:47 UTC]   Automatic theme updates complete.
+[27-Mar-2025 10:07:47 UTC] Automatic updates complete.
+[27-Mar-2025 10:24:57 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_action(), 0 passed in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\functions.php on line 68 and at least 2 expected in C:\xampp\htdocs\Codes\WP\practice\wp-includes\plugin.php:441
+Stack trace:
+#0 C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\functions.php(68): add_action()
+#1 C:\xampp\htdocs\Codes\WP\practice\wp-settings.php(672): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Codes\WP\practice\wp-config.php(99): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Codes\WP\practice\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Codes\WP\practice\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\Codes\WP\practice\wp-includes\plugin.php on line 441
+[27-Mar-2025 10:42:14 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\functions.php on line 67
+[27-Mar-2025 10:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[27-Mar-2025 10:42:14 UTC] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\Codes\WP\practice\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[27-Mar-2025 10:42:16 UTC] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\Codes\WP\practice\wp-content\themes\quro-custom\functions.php on line 67

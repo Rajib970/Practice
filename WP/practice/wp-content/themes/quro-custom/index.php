@@ -440,6 +440,31 @@
           </div>
         </form>
       </div><!-- End Contact Form -->
+<?php
+      if($wpb_all_query->have_posts()): ?>  <!-- We got our post now -->
+
+<ul>
+
+ <!-- The Loop -->
+ <?php 
+ while($wpb_all_query->have_posts()):
+   $wpb_all_query->the_post(); // increment of while loop
+ ?>
+
+ <li>
+   <a href="<?php the_permalink(); ?>">
+     <?php the_title(); ?>
+   </a>
+   <?php the_content(); ?>
+ </li>
+
+<?php endwhile; ?>
+
+<!-- End of Loop -->
+
+</ul>
+
+<?php endif; ?>
 
     </div>
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 
 export default class News extends Component {
-    atricles = [
+    articles = [
         {
             "source": {
                 "id": null,
@@ -56,24 +56,23 @@ export default class News extends Component {
             "content": "I think this is probably a typical story. Back in 2011 or so I screwed around with Bitcoin. Back then it was possible to mine it without using the power output of Argentina. I figured it was a nice p… [+312 chars]"
         }
     ];
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         articles: this.atricles,
-    //         loading: false
-    //     }
-    // }
+    constructor() {
+        super();
+        this.state = {
+            articles: this.articles,
+            loading: false
+        }
+    }
     render() {
         return (
-            <div class="row">
+            <div className="row">
                 <h2> This is a news component</h2>
-                {this.state.atricles.map(element)=>{
-                    <div class="col-md-4" key={elemnt.url}>
-                        <NewsItem title={element.title} description={element.description} url={element.url} />
+                {this.state.articles.map((element) => {
+                    return (<div className="col-md-4" key={element.url}>
+                        <NewsItem title={element.title.slice(0, 40)} description={element.description.slice(0, 88)} urlToImage={element.urlToImage} url={element.url} />
                     </div>
-
-                }
-            }
+                    )
+                })}
             </div>
         )
     }

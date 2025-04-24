@@ -1,26 +1,39 @@
-def calculateGmean(a,b):
-    mean = (a*b)/(a+b)
-    print(mean)
+### KBC program
+def questions(question):
+    print(question)
 
-def isGreater(a,b):
-    if(a>b):
-        print("First Number is Greater")
+
+
+def answer(answers,correct_answer,amount):
+    print(answers)
+    
+    answer = int(input("Enter the Option:"))
+    if(answer == correct_answer):
+        amount = amount+2
     else:
-        print("Second NUmber is Greater") 
+        amount = amount+0
 
-def islesser(a,b):
-    pass        
+    return amount    
 
+amount = 0
 
-a = 9
-b = 7
-isGreater(a,b)
-calculateGmean(a,b)   
+question = [
+    "1. Who is PM of India?", "2. Name of National Bird?", "3.National fruit?","4. Python is?"
+]
 
-c = 9
-d = 10
+answers = [
+    ["1. Modi","2. Lodi","3. Sodi","4.Jodi"],["1.Bird","2.Crow","3.Eagle","4. Peacock"],["1.Apple","2.Mango","3.Berry","4.Cherry"],
+    ["1.Computer","2.Mobile","3.Logic Gate","4. PL"]
+]
 
-isGreater(c,d)
-calculateGmean(c,d)
+questions(question[0])
+amount = answer(answers[0],1,amount)
+questions(question[1])
+amount = answer(answers[1],4,amount)
+questions(question[2])
+amount = answer(answers[2],2,amount)
+questions(question[3])
+amount = answer(answers[3],4,amount)
 
+print("Winning Prize:",amount)
 

@@ -6,12 +6,41 @@ export default class News extends Component {
         super();
         this.state = {
             articles: [],
-            loading: false
+            loading: false,
+            page: 1,
+            pagesize:20
         }
     }
 
+    handleNextClick = async () => {
+        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0f72d2b3a1e4442593eecc151b5d77b8&page=${this.state.page + 1}&pagesize=${this.state.pagesize})`;
+        let data = await fetch(url);
+        let parsedata = await data.json();
+        if (this.state.pagesize < parsedata.totalResults) {
+            console.log(parsedata);
+            this.setState({
+                page: this.state.page + 1,
+                articles: parsedata.articles,
+                pagesize: parsedata.totalResults
+            })
+        }
+    }
+
+    handlePreviousClick = async () => {
+        console.log("Previous")
+        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0f72d2b3a1e4442593eecc151b5d77b8&page=${this.state.page - 1}&pagesize=${this.state.pagesize}`;
+        let data = await fetch(url);
+        let parsedata = await data.json();
+        console.log(parsedata);
+        this.setState({
+            page:this.state.page - 1,
+            articles: parsedata.articles,
+            pagesize: parsedata.totalResults
+        })
+    }
+
     async componentDidMount() {
-        let url = "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0f72d2b3a1e4442593eecc151b5d77b8";
+        let url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0f72d2b3a1e4442593eecc151b5d77b8`;
         let data = await fetch(url);
         let parsedata = await data.json();
         console.log(parsedata);
@@ -29,6 +58,12 @@ export default class News extends Component {
                     )
                 })
                 }
+                <div className="container d-flex justify-content-between">
+                    <button type="button" disabled={this.state.page <= 1} className="btn btn-primary" onClick={this.handlePreviousClick}>&larr; Previous</button>
+                    <button type="button" className="btn btn-primary" onClick={this.handleNextClick}>	 Next  &rarr;</button>
+                    
+
+                </div>
             </div >
         )
     }

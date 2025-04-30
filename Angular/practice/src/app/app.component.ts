@@ -11,13 +11,13 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'Testing';
-  name = "Rajib";
-  x = 10;
-  y = 30;
+  handleClickEvent() {
+    console.log("Function Call")
+    this.otherFunction()
+  }
 
-  hello() {
-    let a = 20;
+  otherFunction() {
+    console.log("Other Function")
   }
 }
 

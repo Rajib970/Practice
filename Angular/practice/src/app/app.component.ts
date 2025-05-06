@@ -11,13 +11,31 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  handleClickEvent() {
-    console.log("Function Call")
-    this.otherFunction()
+  count: number = 0
+  
+  handleIncrememnt() {
+    this.count+=1
   }
 
-  otherFunction() {
-    console.log("Other Function")
+  handleDecrememnt() {
+    if(this.count>0)
+    this.count -= 1
+  }
+
+  handleReset() {
+    this.count = 0
+  }
+
+  handleCounter(val: string) {
+
+    if (val == '+') {
+      this.count += 1
+    } else if (val == '-' && this.count > 0) {
+      this.count -= 1
+    } else {
+      this.count = 0
+    }
+    
   }
 }
 

@@ -1,2 +1,7 @@
-<h1>Angular</h1>
-<button (click)="handleClickEvent()"> Click Me</button>
+<h1>Counter App</h1>
+<div style="text-align: center;">
+    <h2 class="count">{{count}}</h2>
+    <button (click)="handleCounter('+')" class="btn bg-green"> Increment+ </button>
+    <button (click)="handleCounter('')" class="btn bg-brown"> Reset </button>
+    <button (click)="handleCounter('-')"  class="btn bg-red"> Decrement- </button>
+</div>

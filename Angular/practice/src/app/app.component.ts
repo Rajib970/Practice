@@ -6,36 +6,36 @@ import { ProfileComponent } from './profile/profile.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,ProfileComponent],
+  imports: [RouterOutlet, LoginComponent, SignupComponent, ProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  count: number = 0
-  
-  handleIncrememnt() {
-    this.count+=1
+  name = "";
+  displayName = "";
+  setName = "Sam";
+  email = ""
+
+  getName(event: Event) {
+    this.name = (event.target as HTMLInputElement).value
   }
 
-  handleDecrememnt() {
-    if(this.count>0)
-    this.count -= 1
+  showName() {
+    this.displayName = this.name;
   }
 
-  handleReset() {
-    this.count = 0
+  nameSet() {
+    this.name = "Sam";
   }
 
-  handleCounter(val: string) {
-
-    if (val == '+') {
-      this.count += 1
-    } else if (val == '-' && this.count > 0) {
-      this.count -= 1
-    } else {
-      this.count = 0
-    }
-    
+  getEmail(val: string) {
+    this.email = val;
   }
+
+  setEmail() {
+    this.email = "Default@gmail.com"
+  }
+
+
 }
 

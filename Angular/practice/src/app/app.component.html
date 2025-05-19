@@ -1,6 +1,32 @@
-<h1>Counter App</h1>
-<button class="btn" name="btn-name" (click)="handleEvent($event)"> Click Me</button>
+<h1> If Else | Control Flow</h1>
 
-<div (mouseenter)="handleEvent($event)" style="background: green; height: 100px; width: 100px;"> </div>
-<div (mouseleave)="handleEvent($event)" style="background: blue; height: 100px; width: 100px;"></div>
-<input (focus)="handleEvent($event)" (input)="handleEvent($event)" type="text" name="username">
+<button (click)="hideDiv()"> Hide Div</button>
+<button (click)="showDiv()">Show Div</button>
+<button (click)="toggleDiv()"> Toggle Div </button>
+@if(display){
+    <div style="width:200px; height: 200px; background-color: green;">
+    
+        </div>
+}
+
+<!-- @if(x==0){
+    <div style="width:200px; height: 200px; background-color: green;">
+    
+    </div>
+} -->
+
+<hr>
+
+<button (click)="toggleDivTwo()"> {{toggle?'Show Red Div':'Show Green Div'}} </button>
+
+@if(toggle){
+    <div style="height:100px;width:100px;background-color: green;">
+
+    </div>
+
+}@else{
+    <div style="height:100px;width:100px;background-color: red;">
+    
+    </div>
+    
+}

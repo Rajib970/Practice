@@ -11,31 +11,29 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  count: number = 0
-  
-  handleIncrememnt() {
-    this.count+=1
+  display = true
+  x = 10
+  toggle = false
+
+  hideDiv() {
+    this.display = false
   }
 
-  handleDecrememnt() {
-    if(this.count>0)
-    this.count -= 1
+  showDiv() {
+    this.display = true
   }
 
-  handleReset() {
-    this.count = 0
+  toggleDiv() {
+    this.display = !this.display
   }
 
-  handleCounter(val: string) {
+  toggleDivTwo() {
+    this.toggle = !this.toggle
+  }
 
-    if (val == '+') {
-      this.count += 1
-    } else if (val == '-' && this.count > 0) {
-      this.count -= 1
-    } else {
-      this.count = 0
-    }
-    
+  handleEvent(event:Event) {
+    console.log("Event!", event.type)
+    console.log((event.target as HTMLInputElement).value)
   }
 }
 

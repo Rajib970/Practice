@@ -6,7 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,LoginComponent,SignupComponent,ProfileComponent],
+  imports: [RouterOutlet, LoginComponent, SignupComponent, ProfileComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -35,5 +35,8 @@ export class AppComponent {
     console.log("Event!", event.type)
     console.log((event.target as HTMLInputElement).value)
   }
+
+
+
 }
 

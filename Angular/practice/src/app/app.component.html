@@ -1,13 +1,17 @@
-<h1>User Is: {{displayName}}</h1>
+<h2> Else If | Control Flow</h2>
 
-<input type="text" value="{{name}}" (input)="getName($event)" placeholder="Enter Your Name" />
-<br><br>
-<button (click)="showName()"> Get Data</button>
-<button (click)="nameSet()"> Set Data</button>
+<button (click)="handleColor(1)">Red</button>
+<button (click)="handleColor(2)">Blue</button>
+<button (click)="handleColor(3)">Yellow</button>
+<button (click)="handleColor(0)">Black</button>
+<input type="text" (input)="handleInput($event)" placeholder="Enter Color Number">
 
-<hr>
-
-<h1>Email: {{email}}</h1>
-<input type="text" value="{{email}}" placeholder="Enter Email" #emailfield>
-<button (click)="getEmail(emailfield.value)">Get Email</button>
-<button (click)="setEmail()">Set Email</button>
+@if(color == 1){
+<div style=" height: 50px; width:100px; background-color: red; margin: 2px;;"></div>
+}@else if(color == 2){
+<div style="height: 50px; width:100px; background-color: blue;"></div>
+}@else if(color == 3){
+<div style="height: 50px; width:100px; background-color: yellow;"></div>
+}@else{
+<div style="height: 50px; width:100px; background-color: black;"></div>
+}

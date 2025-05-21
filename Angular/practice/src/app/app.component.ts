@@ -11,30 +11,31 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  name = "";
-  displayName = "";
-  setName = "Sam";
-  email = ""
+  display = true
+  x = 10
+  toggle = false
 
-  getName(event: Event) {
-    this.name = (event.target as HTMLInputElement).value
+  hideDiv() {
+    this.display = false
   }
 
-  showName() {
-    this.displayName = this.name;
+  showDiv() {
+    this.display = true
   }
 
-  nameSet() {
-    this.name = "Sam";
+  toggleDiv() {
+    this.display = !this.display
   }
 
-  getEmail(val: string) {
-    this.email = val;
+  toggleDivTwo() {
+    this.toggle = !this.toggle
   }
 
-  setEmail() {
-    this.email = "Default@gmail.com"
+  handleEvent(event:Event) {
+    console.log("Event!", event.type)
+    console.log((event.target as HTMLInputElement).value)
   }
+
 
 
 }

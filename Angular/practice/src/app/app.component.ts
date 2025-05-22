@@ -6,37 +6,20 @@ import { ProfileComponent } from './profile/profile.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LoginComponent, SignupComponent, ProfileComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  display = true
-  x = 10
-  toggle = false
+  color = "green" 
 
-  hideDiv() {
-    this.display = false
+  handleColor(val: string) {
+    this.color = val;
   }
 
-  showDiv() {
-    this.display = true
+  handleInput(event: Event) {
+    this.color = (event.target as HTMLInputElement).value;
   }
-
-  toggleDiv() {
-    this.display = !this.display
-  }
-
-  toggleDivTwo() {
-    this.toggle = !this.toggle
-  }
-
-  handleEvent(event:Event) {
-    console.log("Event!", event.type)
-    console.log((event.target as HTMLInputElement).value)
-  }
-
-
 
 }
 

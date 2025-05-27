@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -11,15 +11,22 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  color = "green" 
+  x = 10
+  count = signal(10);
 
-  handleColor(val: string) {
-    this.color = val;
+  constructor() {
+    effect(() => {
+      console.log(this.count());
+      // console.log(this.x);
+    })
   }
 
-  handleInput(event: Event) {
-    this.color = (event.target as HTMLInputElement).value;
+  updateValue(val: string) {
+    if (val == 'inc') {
+      this.count.set(this.count() + 1);
+    } else {
+      this.count.set(this.count() - 1);
+    }
   }
-
 }
 

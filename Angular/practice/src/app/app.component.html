@@ -1,31 +1,6 @@
-<h2> Switch Case in Angular</h2>
+<h2> Signals </h2>
 
-<button (click)="handleColor('red')"> Red </button>
-<button (click)="handleColor('green')"> Green </button>
-<button (click)="handleColor('yellow')"> yellow </button>
-<button (click)="handleColor('blue')"> Blue </button>
-<button (click)="handleColor('black')"> No Color </button>
-<input type="text" (input)="handleInput($event)" placeholder="Enter Color">
+<h4> {{count()}}</h4>
 
-@switch(color){
-
-@case('red'){
-<h2 style="color:red;">Red Color</h2>
-
-}
-@case('green'){
-<h2 style="color:green;"> Green Color </h2>
-
-}
-@case('yellow'){
-<h2 style="color:yellow;"> Yellow Color</h2>
-
-}
-@case('blue'){
-<h2 style="color:blue;"> Blue Color</h2>
-
-}
-@default{
-<h2 style="color:black;"> No Color Match </h2>
-}
-}
+<button (click)="count.set(count() + 1)"> Increment </button>
+<button (click)="count.set(count() - 1)"> Decrement </button>

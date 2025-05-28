@@ -1,4 +1,4 @@
-import { Component, effect, signal } from '@angular/core';
+import { Component, computed, effect, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -11,22 +11,16 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  x = 10
-  count = signal(10);
+  x = signal(10);
+  y = signal(20);
+  z = computed(() => this.x() + this.y())
 
-  constructor() {
-    effect(() => {
-      console.log(this.count());
-      // console.log(this.x);
-    })
+  showValue() {
+    console.log(this.z())
   }
 
-  updateValue(val: string) {
-    if (val == 'inc') {
-      this.count.set(this.count() + 1);
-    } else {
-      this.count.set(this.count() - 1);
-    }
+  updateX() {
+    this.x.set(100)
   }
 }
 

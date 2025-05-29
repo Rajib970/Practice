@@ -11,16 +11,25 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  x = signal(10);
-  y = signal(20);
-  z = computed(() => this.x() + this.y())
+  count = signal(0)
+  displayHeading = false;
 
-  showValue() {
-    console.log(this.z())
+  constructor() {
+    effect(() => {
+      if (this.count() == 2) {
+        this.displayHeading = true;
+        setTimeout(() => {
+          this.displayHeading = false;
+        }, 2000);
+      } else {
+        this.displayHeading = false;
+      }
+
+    })
   }
 
-  updateX() {
-    this.x.set(100)
+  headingHandle() {
+    this.count.set(this.count() + 1)
   }
 }
 

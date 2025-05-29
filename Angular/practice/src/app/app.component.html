@@ -1,5 +1,9 @@
-<h2> Computed Signals </h2>
+<h1> Effect </h1>
 
-{{z()}}
-<button (click)="showValue()">Show Value</button>
-<button (click)="updateX()"> Update X</button>
+<h2> {{count()}} </h2>
+
+<button (click)="headingHandle()"> Update User Name</button>
+
+@if(displayHeading){
+<h3 style="background-color:green"> Display</h3>
+}

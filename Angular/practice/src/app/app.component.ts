@@ -11,25 +11,7 @@ import { ProfileComponent } from './profile/profile.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  count = signal(0)
-  displayHeading = false;
-
-  constructor() {
-    effect(() => {
-      if (this.count() == 2) {
-        this.displayHeading = true;
-        setTimeout(() => {
-          this.displayHeading = false;
-        }, 2000);
-      } else {
-        this.displayHeading = false;
-      }
-
-    })
-  }
-
-  headingHandle() {
-    this.count.set(this.count() + 1)
-  }
+  // users = ['Rajib', 'Ram', 'Shyam', 'Harry', 'Peter']
+  users = []
 }
 

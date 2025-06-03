@@ -1,8 +1,4 @@
-<h1> For Loop Contextual Variables </h1>
+<h1> Two Way Binding </h1>
 
-@for(user of users; track user; let i = $index; let f = $first; let l = $last){
-<h2> For loop body</h2>
-}
-@empty(){
-<h2> Body of empty block </h2>
-}
+<input [(ngModel)]='name' placeholder="Enter Name">
+<h2> {{name}} </h2>

@@ -10,6 +10,18 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  name = "Rajib"
+  task = "";
+  taskList: { id: number, task: string }[] = [];
+
+  addTask() {
+    this.taskList.push({ id: this.taskList.length + 1, task: this.task })
+    this.task = ""
+
+    console.log(this.taskList);
+  }
+
+  deleteTask(id: number) {
+    this.taskList = this.taskList.filter((item) => item.id != id);
+  }
 }
 

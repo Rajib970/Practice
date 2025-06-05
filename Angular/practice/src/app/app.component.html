@@ -1,12 +1,4 @@
-<h3> To Do List</h3>
+<h2 [style.backgroundColor]="bgColor" [style.fontSize]="zoom ? '100px' : '20px'"> Dynamic Styling
+</h2>
 
-<input type="text" [(ngModel)]="task" placeholder="Enter New Task">
-<button (click)="addTask()">Add Task</button>
-
-@for(task of taskList; track task.id){
-<ul>
-    <li>{{task.id}}</li>
-    <li>{{task.task}}</li>
-    <li><button (click)="deleteTask(task.id)">Delete</button></li>
-</ul>
-}
+<button (click)="UpdateFont()"> Toggle Font </button>

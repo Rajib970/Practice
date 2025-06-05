@@ -10,18 +10,15 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  task = "";
-  taskList: { id: number, task: string }[] = [];
+  bgColor = "red"
 
-  addTask() {
-    this.taskList.push({ id: this.taskList.length + 1, task: this.task })
-    this.task = ""
+  headingSizeBig = "100px"
+  headingSizeSmall = "30px"
 
-    console.log(this.taskList);
-  }
+  zoom = true
 
-  deleteTask(id: number) {
-    this.taskList = this.taskList.filter((item) => item.id != id);
+  UpdateFont() {
+    this.zoom = !this.zoom;
   }
 }
 

@@ -1,1 +1,13 @@
-<h3 *ngIf="show"> Heading Tag </h3>
+<h3> ngFor</h3>
+
+<ul>
+    <li *ngFor="let x of students">
+        {{x}}
+    </li>
+</ul>
+
+<ul>
+    <li *ngFor="let data of studentsData">
+        {{data.name}},{{data.roll}},{{data.email}}
+    </li>
+</ul>

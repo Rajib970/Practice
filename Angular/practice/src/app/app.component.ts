@@ -12,33 +12,10 @@ import { NgFor, NgIf } from '@angular/common';
 })
 
 export class AppComponent {
-  students = ["Anil", "Sidhu", "Sam", "Bruce", "Peter"]
+  block = 0
 
-  studentsData = [
-    {
-      name: 'Rajib',
-      roll: '30',
-      email: 'rajib@gmail.com'
-    },
-    {
-      name: 'Sam',
-      roll: '33',
-      email: 'sam@gmail.com'
-    },
-    {
-      name: 'Jhon',
-      roll: '35',
-      email: 'jhon@gmail.com'
-    },
-    {
-      name: 'Karan',
-      roll: '40',
-      email: 'karan@gmail.com'
-    }, {
-      name: 'Peter',
-      roll: '50',
-      email: 'peter@gmail.com'
-    }
-  ]
+  updateBlock() {
+    this.block++;
+  }
 }
 

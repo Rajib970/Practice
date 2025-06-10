@@ -1,13 +1,15 @@
-<h3> ngFor</h3>
+<h3> ngIf Directive in Angular</h3>
 
-<ul>
-    <li *ngFor="let x of students">
-        {{x}}
-    </li>
-</ul>
+<div *ngIf="block == 0">
+    <h2> Heading 0</h2>
+</div>
 
-<ul>
-    <li *ngFor="let data of studentsData">
-        {{data.name}},{{data.roll}},{{data.email}}
-    </li>
-</ul>
+<div *ngIf="block == 1">
+    <h2> Heading 1</h2>
+</div>
+
+<div *ngIf="block == 2">
+    <h2> Heading 2</h2>
+</div>
+
+<button (click)="updateBlock()"> Update Block </button>

@@ -1,15 +1,16 @@
-<h3> ngIf Directive in Angular</h3>
+<h3> *ngSwitch</h3>
 
-<div *ngIf="block == 0">
-    <h2> Heading 0</h2>
+<div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'red'" style="background-color: red;"> Red Color </h1>
+    <h1 *ngSwitchCase="'green'" style="background-color: green;"> Green Color </h1>
+    <h1 *ngSwitchCase="'blue'" style="background-color: blue;"> Blue Color </h1>
+    <h1 *ngSwitchCase="'pink'" style="background-color: pink;"> Pink Color </h1>
+    <h1 *ngSwitchDefault> No Color Match </h1>
 </div>
 
-<div *ngIf="block == 1">
-    <h2> Heading 1</h2>
+<div>
+    <button (click)="updateColor('red')">Red</button>
+    <button (click)="updateColor('green')">Greed</button>
+    <button (click)="updateColor('blue')">Blue</button>
+    <button (click)="updateColor('pink')">Pink</button>
 </div>
-
-<div *ngIf="block == 2">
-    <h2> Heading 2</h2>
-</div>
-
-<button (click)="updateBlock()"> Update Block </button>

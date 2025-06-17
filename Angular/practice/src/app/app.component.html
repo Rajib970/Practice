@@ -1,16 +1,14 @@
-<h3> *ngSwitch</h3>
+<h3> Routing </h3>
 
-<div [ngSwitch]="color">
-    <h1 *ngSwitchCase="'red'" style="background-color: red;"> Red Color </h1>
-    <h1 *ngSwitchCase="'green'" style="background-color: green;"> Green Color </h1>
-    <h1 *ngSwitchCase="'blue'" style="background-color: blue;"> Blue Color </h1>
-    <h1 *ngSwitchCase="'pink'" style="background-color: pink;"> Pink Color </h1>
-    <h1 *ngSwitchDefault> No Color Match </h1>
-</div>
-
-<div>
-    <button (click)="updateColor('red')">Red</button>
-    <button (click)="updateColor('green')">Greed</button>
-    <button (click)="updateColor('blue')">Blue</button>
-    <button (click)="updateColor('pink')">Pink</button>
-</div>
+<ul>
+    <li>
+        <a routerLink="/login"> Login </a>
+    </li>
+    <li>
+        <a routerLink="/about"> About </a>
+    </li>
+    <li>
+        <a routerLink="/contact"> Contact </a>
+    </li>
+</ul>
+<router-outlet />

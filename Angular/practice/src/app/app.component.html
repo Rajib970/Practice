@@ -1,30 +1,8 @@
-<h3> Template Driven Forms </h3>
+<app-user [user]="userName" city="Kolkata"></app-user>
 
-<form #userForm="ngForm" (ngSubmit)="addDetails(userForm.value)">
-    <input #name="ngModel" type="text" required name="name" ngModel>
-    <span class="error" *ngIf="name.invalid && name.touched"> Name is Required </span>
-    <br><br>
-    <input #password="ngModel" required type="text" minlength="5" maxlength="10" name="password" ngModel>
-    <span class="error" *ngIf="password.invalid && password.touched"> Please Enter Valid Password </span>
-    <br><br>
-    <input #email="ngModel" email required type="email" name="email" ngModel>
-    <span class="error" *ngIf="email.invalid && email.touched"> Please Enter Valid Email </span>
-    <br><br>
-    <input #address="ngModel" required pattern="[a-zA-Z0-9\s]+" type="text" name="address" ngModel>
-    <span class="error" *ngIf="address.invalid && address.touched"> Please Enter Valid Address </span>
-    <br><br>
-    <select #gender="ngModel" required name="gender" ngModel>
-        <option value=""> Select Gender </option>
-        <option value="male"> Male</option>
-        <option value="female"> Female </option>
-    </select>
-    <span class="error" *ngIf="gender.invalid && gender.touched"> Please Select a Gender </span>
-    <br><br>
-    <button [disabled]="userForm.invalid">Add User</button>
-</form>
-
-<h3>{{userDetail?.name}} </h3>
-<h3>{{userDetail?.email}} </h3>
-<h3>{{userDetail?.password}} </h3>
-<h3>{{userDetail?.address}} </h3>
-<h3>{{userDetail?.gender}} </h3>
+<select #selecteduser (change)="selectUser(selecteduser.value)">
+    <option value="Anil"> Anil </option>
+    <option value="Rajib"> Rajib </option>
+    <option value="Peter"> Peter </option>
+    <option value="Sam"> Sam </option>
+</select>

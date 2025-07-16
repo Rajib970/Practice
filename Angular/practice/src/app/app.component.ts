@@ -14,11 +14,7 @@ import { UserComponent } from './user/user.component';
 })
 
 export class AppComponent {
-  userName = "";
-
-  selectUser(user: string) {
-    this.userName = user;
-  }
+  users = ['Anil', 'Sam', 'Peter', 'Bruce', 'John']
 }
 
 

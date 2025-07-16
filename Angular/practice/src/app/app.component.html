@@ -1,8 +1,7 @@
-<app-user [user]="userName" city="Kolkata"></app-user>
+<h1> Reuse Component </h1>
 
-<select #selecteduser (change)="selectUser(selecteduser.value)">
-    <option value="Anil"> Anil </option>
-    <option value="Rajib"> Rajib </option>
-    <option value="Peter"> Peter </option>
-    <option value="Sam"> Sam </option>
-</select>
+@for(user of users; track user){
+<div>
+    <app-user [user]="user"></app-user>
+</div>
+}

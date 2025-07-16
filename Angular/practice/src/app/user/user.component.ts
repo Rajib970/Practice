@@ -8,6 +8,5 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  @Input() user: string = '';
-  @Input() city: string = '';
+  @Input() user: String = ''
 }

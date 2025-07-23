@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -8,5 +8,12 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  @Input() user: String = ''
+  @Output() getUsers = new EventEmitter();
+
+  users = ['Rajib', 'Shaw'];
+
+  LoadData() {
+    this.getUsers.emit(this.users)
+  }
+
 }

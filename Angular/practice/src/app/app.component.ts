@@ -14,7 +14,13 @@ import { UserComponent } from './user/user.component';
 })
 
 export class AppComponent {
-  users = ['Anil', 'Sam', 'Peter', 'Bruce', 'John']
+
+  userlist: undefined | string;
+
+  handleUsers(users: string) {
+    console.log(users);
+    this.userlist = users;
+  }
 }
 
 

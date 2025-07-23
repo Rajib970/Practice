@@ -1,7 +1,8 @@
-<h1> Reuse Component </h1>
+<h1> Pass Data From Child Component to Parent Component </h1>
 
-@for(user of users; track user){
-<div>
-    <app-user [user]="user"></app-user>
-</div>
+<app-user (getUsers)="handleUsers($event)"> </app-user>
+
+@for(user of userlist; track user){
+
+    <h3> {{ user}}</h3>
 }

@@ -1,8 +1,21 @@
-<h1> Pass Data From Child Component to Parent Component </h1>
+<h1> Pipes in Angular </h1>
 
-<app-user (getUsers)="handleUsers($event)"> </app-user>
+<h2> {{title}} </h2>
 
-@for(user of userlist; track user){
+<h2> {{title | uppercase}} </h2>
 
-    <h3> {{ user}}</h3>
-}
+<h2> {{title | titlecase }} </h2>
+
+<h2> {{name | lowercase}}</h2>
+
+<h2> {{date | date:'fullDate'}} </h2>
+
+<h2> {{date | date:'hh:mm:ss'}}</h2>
+
+<h2> {{amount | currency}} </h2>
+
+<h2> {{amount | currency:'EUR'}} </h2>
+
+<h2> {{amount | currency:'INR'}} </h2>
+
+<h2> {{date | date:'fullDate' | uppercase}} </h2>

@@ -4,24 +4,18 @@ import { HeaderComponent } from './header/header.component';
 import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule, NgIf } from '@angular/common';
 import { UserComponent } from './user/user.component';
+import { CurrencyConverterPipe } from './pipes/currency-converter.pipe';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, HeaderComponent, ReactiveFormsModule, NgIf, FormsModule, UserComponent, CommonModule],
+  imports: [RouterOutlet, RouterLink, HeaderComponent, ReactiveFormsModule, NgIf, FormsModule, UserComponent, CommonModule, CurrencyConverterPipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  title = "Code Step By Step"
-  name = "RAJIB"
-
-  date = new Date();
-
   amount = 10;
-
-
 }
 
 

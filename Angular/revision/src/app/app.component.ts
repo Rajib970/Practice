@@ -9,8 +9,8 @@ import { RouterOutlet } from '@angular/router';
 })
 
 export class AppComponent {
-  title = 'revision';
-  name = 'Rajib';
+  title = 'Code Step By Step';
+  name = "Rajib"; 
 
 
 }
